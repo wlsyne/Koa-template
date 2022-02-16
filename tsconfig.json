@@ -22,7 +22,6 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "allowSyntheticDefaultImports": false,
     "moduleResolution": "Node",
     "forceConsistentCasingInFileNames": true,
     "module": "commonjs",
@@ -31,8 +30,11 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-    "strictFunctionTypes": true
+    "strictFunctionTypes": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports":false
   },
+  "include": ["app"],
   "exclude": [
     "node_modules",
     "./dist"

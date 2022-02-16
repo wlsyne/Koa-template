@@ -1,0 +1,40 @@
+{
+  // This is an alias to @tsconfig/node12: https://github.com/tsconfig/bases
+  "extends": "ts-node/node12/tsconfig.json",
+  // Most ts-node options can be specified here using their programmatic names.
+  "ts-node": {
+    // It is faster to skip typechecking.
+    // Remove if you want ts-node to do typechecking.
+    "transpileOnly": true,
+    "files": true,
+    "compilerOptions": {
+      // compilerOptions specified here will override those declared below,
+      // but *only* in ts-node.  Useful if you want ts-node and tsc to use
+      // different options with a single tsconfig.json.
+    }
+  },
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "lib": [
+      "es2021"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": false,
+    "moduleResolution": "Node",
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "target": "es2021",
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictFunctionTypes": true
+  },
+  "exclude": [
+    "node_modules",
+    "./dist"
+  ]
+}

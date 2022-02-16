@@ -1,0 +1,6 @@
+test
+dist
+config
+__mocks__
+scripts
+**/__test__/**
